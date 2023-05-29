@@ -1,0 +1,694 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_sculptor" xml:lang="en-US">
+<title>Sculptor Class Reference</title>
+<indexterm><primary>Sculptor</primary></indexterm>
+<para>
+
+<para>Classe que representa um escultor 3D. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;sculptor.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_sculptor_1a014e3ef5517bf0e9d9e14486b6ac6433">Sculptor</link> (int _nx, int _ny, int _nz)</para>
+
+<para>Construtor da classe <link linkend="_class_sculptor">Sculptor</link>. </para>
+</listitem>
+            <listitem><para><link linkend="_class_sculptor_1a8f159bf97458326f16d2e238e11be7ff">~Sculptor</link> ()</para>
+
+<para>Destrutor da classe <link linkend="_class_sculptor">Sculptor</link>. Liberar a memoria reservada. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sculptor_1a5723e671e073ac310b6f385a7fdc9f9f">setColor</link> (float _r, float _g, float _b, float _a)</para>
+
+<para>Define a cor atual utilizada para desenhar. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sculptor_1a4bdea3048b419d58e93074060eaa7b52">putVoxel</link> (int x, int y, int z)</para>
+
+<para>Ativa o voxel na posição (x, y, z) e atribui a ele a cor atual. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sculptor_1ad9d714a35fc8ae16d06eb5df37c3493c">cutVoxel</link> (int x, int y, int z)</para>
+
+<para>Desativa o voxel na posição (x, y, z). </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sculptor_1a311ad7a0fb83fc67ac1f378be8e99fe1">putBox</link> (int x0, int x1, int y0, int y1, int z0, int z1)</para>
+
+<para>Ativa uma caixa de voxels delimitada pelas coordenadas dos pontos (x0, y0, z0) e (x1, y1, z1) e atribui a eles a cor atual. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sculptor_1aa84a1b12b09e9e103fc8d78f8d1bc00f">cutBox</link> (int x0, int x1, int y0, int y1, int z0, int z1)</para>
+
+<para>Desativa uma caixa de voxels delimitada pelas coordenadas dos pontos (x0, y0, z0) e (x1, y1, z1). </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sculptor_1a794a2b6ee8fc8098fd6150cb46101fc6">putSphere</link> (int xcenter, int ycenter, int zcenter, int radius)</para>
+
+<para>Ativa uma esfera de voxels com centro em (xcenter, ycenter, zcenter) e raio &quot;radius&quot;, atribuindo a eles a cor atual. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sculptor_1a67ab8c0ba5116adb8af1d01ad373ac15">cutSphere</link> (int xcenter, int ycenter, int zcenter, int radius)</para>
+
+<para>Desativa uma esfera de voxels com centro em (xcenter, ycenter, zcenter) e raio &quot;radius&quot;. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sculptor_1a093615b0c2b9b3a17a56300b9b939f39">putEllipsoid</link> (int xcenter, int ycenter, int zcenter, int rx, int ry, int rz)</para>
+
+<para>Ativa um elipsoide de voxels com centro em (xcenter, ycenter, zcenter), raios &quot;rx&quot;, &quot;ry&quot; e &quot;rz&quot;, atribuindo a eles a cor atual. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sculptor_1a18d2922c111c4c13653ee07d878151ad">cutEllipsoid</link> (int xcenter, int ycenter, int zcenter, int rx, int ry, int rz)</para>
+
+<para>Desativa um elipsoide de voxels com centro em (xcenter, ycenter, zcenter), raios &quot;rx&quot;, &quot;ry&quot; e &quot;rz&quot;. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_sculptor_1a58cb72d22001a5034f15383ca983830c">writeOFF</link> (const char *filename)</para>
+
+<para>Escreve a estrutura do objeto em um arquivo no formato OFF. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Classe que representa um escultor 3D. </para>
+
+
+
+<para>O escultor é responsável por criar e manipular uma matriz tridimensional de voxels. Ele oferece métodos para realizar operações como colocar e remover voxels, criar caixas, esferas e elipsoides, definir cores e transparências, e salvar a escultura em um arquivo OFF. </para>
+<para>
+Definition at line <link linkend="_sculptor_8h_source_1l00013">13</link> of file <link linkend="_sculptor_8h_source">sculptor.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_sculptor_1a014e3ef5517bf0e9d9e14486b6ac6433"/><section>
+    <title>Sculptor()</title>
+<indexterm><primary>Sculptor</primary><secondary>Sculptor</secondary></indexterm>
+<indexterm><primary>Sculptor</primary><secondary>Sculptor</secondary></indexterm>
+<para><computeroutput>Sculptor::Sculptor (int _nx, int _ny, int _nz)</computeroutput></para><para>
+
+<para>Construtor da classe <link linkend="_class_sculptor">Sculptor</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>_nx</entry><entry>
+<para>Dimensão em X do escultor. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>_ny</entry><entry>
+<para>Dimensão em Y do escultor. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>_nz</entry><entry>
+<para>Dimensão em Z do escultor.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Exemplo de uso:</para>
+
+<para><link linkend="_class_sculptor">Sculptor</link> v(10, 10, 10); </para>
+<para>
+Definition at line <link linkend="_sculptor_8cpp_source_1l00018">18</link> of file <link linkend="_sculptor_8cpp_source">sculptor.cpp</link>.</para>
+</section>
+<anchor xml:id="_class_sculptor_1a8f159bf97458326f16d2e238e11be7ff"/><section>
+    <title>~Sculptor()</title>
+<indexterm><primary>~Sculptor</primary><secondary>Sculptor</secondary></indexterm>
+<indexterm><primary>Sculptor</primary><secondary>~Sculptor</secondary></indexterm>
+<para><computeroutput>Sculptor::~Sculptor ( )</computeroutput></para><para>
+
+<para>Destrutor da classe <link linkend="_class_sculptor">Sculptor</link>. Liberar a memoria reservada. </para>
+</para>
+<para>
+Definition at line <link linkend="_sculptor_8cpp_source_1l00039">39</link> of file <link linkend="_sculptor_8cpp_source">sculptor.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_sculptor_1aa84a1b12b09e9e103fc8d78f8d1bc00f"/><section>
+    <title>cutBox()</title>
+<indexterm><primary>cutBox</primary><secondary>Sculptor</secondary></indexterm>
+<indexterm><primary>Sculptor</primary><secondary>cutBox</secondary></indexterm>
+<para><computeroutput>void Sculptor::cutBox (int x0, int x1, int y0, int y1, int z0, int z1)</computeroutput></para><para>
+
+<para>Desativa uma caixa de voxels delimitada pelas coordenadas dos pontos (x0, y0, z0) e (x1, y1, z1). </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>x0</entry><entry>
+<para>Coordenada X do canto superior esquerdo da caixa. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>x1</entry><entry>
+<para>Coordenada X do canto inferior direito da caixa. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y0</entry><entry>
+<para>Coordenada Y do canto superior esquerdo da caixa. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y1</entry><entry>
+<para>Coordenada Y do canto inferior direito da caixa. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>z0</entry><entry>
+<para>Coordenada Z do canto superior esquerdo da caixa. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>z1</entry><entry>
+<para>Coordenada Z do canto inferior direito da caixa.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Exemplo de uso:</para>
+
+<para><link linkend="_class_sculptor">Sculptor</link> v(10, 10, 10);</para>
+
+<para>v.putBox(2, 7, 2, 7, 2, 7); // Ativa uma caixa delimitada pelos pontos (2, 2, 2) e (7, 7, 7)</para>
+
+<para>v.cutBox(3, 6, 3, 6, 3, 6); // Desativa uma caixa delimitada pelos pontos (3, 3, 3) e (6, 6, 6) </para>
+<para>
+Definition at line <link linkend="_sculptor_8cpp_source_1l00161">161</link> of file <link linkend="_sculptor_8cpp_source">sculptor.cpp</link>.</para>
+</section>
+<anchor xml:id="_class_sculptor_1a18d2922c111c4c13653ee07d878151ad"/><section>
+    <title>cutEllipsoid()</title>
+<indexterm><primary>cutEllipsoid</primary><secondary>Sculptor</secondary></indexterm>
+<indexterm><primary>Sculptor</primary><secondary>cutEllipsoid</secondary></indexterm>
+<para><computeroutput>void Sculptor::cutEllipsoid (int xcenter, int ycenter, int zcenter, int rx, int ry, int rz)</computeroutput></para><para>
+
+<para>Desativa um elipsoide de voxels com centro em (xcenter, ycenter, zcenter), raios &quot;rx&quot;, &quot;ry&quot; e &quot;rz&quot;. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>xcenter</entry><entry>
+<para>Coordenada X do centro do elipsoide. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>ycenter</entry><entry>
+<para>Coordenada Y do centro do elipsoide. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>zcenter</entry><entry>
+<para>Coordenada Z do centro do elipsoide. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>rx</entry><entry>
+<para>Raio em X do elipsoide. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>ry</entry><entry>
+<para>Raio em Y do elipsoide. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>rz</entry><entry>
+<para>Raio em Z do elipsoide.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Exemplo de uso:</para>
+
+<para><link linkend="_class_sculptor">Sculptor</link> v(10, 10, 10);</para>
+
+<para>v.putEllipsoid(5, 5, 5, 3, 4, 2); // Ativa um elipsoide com centro em (5, 5, 5), raios 3, 4 e 2</para>
+
+<para>v.cutEllipsoid(5, 5, 5, 2, 3, 1); // Desativa um elipsoide com centro em (5, 5, 5), raios 2, 3 e 1 </para>
+<para>
+Definition at line <link linkend="_sculptor_8cpp_source_1l00259">259</link> of file <link linkend="_sculptor_8cpp_source">sculptor.cpp</link>.</para>
+</section>
+<anchor xml:id="_class_sculptor_1a67ab8c0ba5116adb8af1d01ad373ac15"/><section>
+    <title>cutSphere()</title>
+<indexterm><primary>cutSphere</primary><secondary>Sculptor</secondary></indexterm>
+<indexterm><primary>Sculptor</primary><secondary>cutSphere</secondary></indexterm>
+<para><computeroutput>void Sculptor::cutSphere (int xcenter, int ycenter, int zcenter, int radius)</computeroutput></para><para>
+
+<para>Desativa uma esfera de voxels com centro em (xcenter, ycenter, zcenter) e raio &quot;radius&quot;. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>xcenter</entry><entry>
+<para>Coordenada X do centro da esfera. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>ycenter</entry><entry>
+<para>Coordenada Y do centro da esfera. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>zcenter</entry><entry>
+<para>Coordenada Z do centro da esfera. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>radius</entry><entry>
+<para>Raio da esfera.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Exemplo de uso:</para>
+
+<para><link linkend="_class_sculptor">Sculptor</link> v(10, 10, 10);</para>
+
+<para>v.putSphere(5, 5, 5, 3); // Ativa uma esfera com centro em (5, 5, 5) e raio 3</para>
+
+<para>v.cutSphere(5, 5, 5, 2); // Desativa uma esfera com centro em (5, 5, 5) e raio 2 </para>
+<para>
+Definition at line <link linkend="_sculptor_8cpp_source_1l00205">205</link> of file <link linkend="_sculptor_8cpp_source">sculptor.cpp</link>.</para>
+</section>
+<anchor xml:id="_class_sculptor_1ad9d714a35fc8ae16d06eb5df37c3493c"/><section>
+    <title>cutVoxel()</title>
+<indexterm><primary>cutVoxel</primary><secondary>Sculptor</secondary></indexterm>
+<indexterm><primary>Sculptor</primary><secondary>cutVoxel</secondary></indexterm>
+<para><computeroutput>void Sculptor::cutVoxel (int x, int y, int z)</computeroutput></para><para>
+
+<para>Desativa o voxel na posição (x, y, z). </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>x</entry><entry>
+<para>Posição do voxel no eixo X. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y</entry><entry>
+<para>Posição do voxel no eixo Y. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>z</entry><entry>
+<para>Posição do voxel no eixo Z.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Exemplo de uso:</para>
+
+<para><link linkend="_class_sculptor">Sculptor</link> v(10, 10, 10);</para>
+
+<para>v.putVoxel(5, 5, 5); // Ativa o voxel na posição (5, 5, 5)</para>
+
+<para>v.cutVoxel(5, 5, 5); // Desativa o voxel na posição (5, 5, 5) </para>
+<para>
+Definition at line <link linkend="_sculptor_8cpp_source_1l00114">114</link> of file <link linkend="_sculptor_8cpp_source">sculptor.cpp</link>.</para>
+</section>
+<anchor xml:id="_class_sculptor_1a311ad7a0fb83fc67ac1f378be8e99fe1"/><section>
+    <title>putBox()</title>
+<indexterm><primary>putBox</primary><secondary>Sculptor</secondary></indexterm>
+<indexterm><primary>Sculptor</primary><secondary>putBox</secondary></indexterm>
+<para><computeroutput>void Sculptor::putBox (int x0, int x1, int y0, int y1, int z0, int z1)</computeroutput></para><para>
+
+<para>Ativa uma caixa de voxels delimitada pelas coordenadas dos pontos (x0, y0, z0) e (x1, y1, z1) e atribui a eles a cor atual. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>x0</entry><entry>
+<para>Coordenada X do canto superior esquerdo da caixa. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>x1</entry><entry>
+<para>Coordenada X do canto inferior direito da caixa. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y0</entry><entry>
+<para>Coordenada Y do canto superior esquerdo da caixa. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y1</entry><entry>
+<para>Coordenada Y do canto inferior direito da caixa. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>z0</entry><entry>
+<para>Coordenada Z do canto superior esquerdo da caixa. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>z1</entry><entry>
+<para>Coordenada Z do canto inferior direito da caixa.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Exemplo de uso:</para>
+
+<para><link linkend="_class_sculptor">Sculptor</link> v(10, 10, 10);</para>
+
+<para>v.setColor(0, 0, 255, 255); // Define a cor azul com transparência total</para>
+
+<para>v.putBox(2, 7, 2, 7, 2, 7); // Ativa uma caixa delimitada pelos pontos (2, 2, 2) e (7, 7, 7) e atribui a ela a cor azul </para>
+<para>
+Definition at line <link linkend="_sculptor_8cpp_source_1l00138">138</link> of file <link linkend="_sculptor_8cpp_source">sculptor.cpp</link>.</para>
+</section>
+<anchor xml:id="_class_sculptor_1a093615b0c2b9b3a17a56300b9b939f39"/><section>
+    <title>putEllipsoid()</title>
+<indexterm><primary>putEllipsoid</primary><secondary>Sculptor</secondary></indexterm>
+<indexterm><primary>Sculptor</primary><secondary>putEllipsoid</secondary></indexterm>
+<para><computeroutput>void Sculptor::putEllipsoid (int xcenter, int ycenter, int zcenter, int rx, int ry, int rz)</computeroutput></para><para>
+
+<para>Ativa um elipsoide de voxels com centro em (xcenter, ycenter, zcenter), raios &quot;rx&quot;, &quot;ry&quot; e &quot;rz&quot;, atribuindo a eles a cor atual. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>xcenter</entry><entry>
+<para>Coordenada X do centro do elipsoide. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>ycenter</entry><entry>
+<para>Coordenada Y do centro do elipsoide. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>zcenter</entry><entry>
+<para>Coordenada Z do centro do elipsoide. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>rx</entry><entry>
+<para>Raio em X do elipsoide. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>ry</entry><entry>
+<para>Raio em Y do elipsoide. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>rz</entry><entry>
+<para>Raio em Z do elipsoide.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Exemplo de uso:</para>
+
+<para><link linkend="_class_sculptor">Sculptor</link> v(10, 10, 10);</para>
+
+<para>v.setColor(0, 255, 0, 255); // Define a cor verde com transparência total</para>
+
+<para>v.putEllipsoid(5, 5, 5, 3, 4, 2); // Ativa um elipsoide com centro em (5, 5, 5), raios 3, 4 e 2, atribuindo a ele a cor verde </para>
+<para>
+Definition at line <link linkend="_sculptor_8cpp_source_1l00232">232</link> of file <link linkend="_sculptor_8cpp_source">sculptor.cpp</link>.</para>
+</section>
+<anchor xml:id="_class_sculptor_1a794a2b6ee8fc8098fd6150cb46101fc6"/><section>
+    <title>putSphere()</title>
+<indexterm><primary>putSphere</primary><secondary>Sculptor</secondary></indexterm>
+<indexterm><primary>Sculptor</primary><secondary>putSphere</secondary></indexterm>
+<para><computeroutput>void Sculptor::putSphere (int xcenter, int ycenter, int zcenter, int radius)</computeroutput></para><para>
+
+<para>Ativa uma esfera de voxels com centro em (xcenter, ycenter, zcenter) e raio &quot;radius&quot;, atribuindo a eles a cor atual. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>xcenter</entry><entry>
+<para>Coordenada X do centro da esfera. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>ycenter</entry><entry>
+<para>Coordenada Y do centro da esfera. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>zcenter</entry><entry>
+<para>Coordenada Z do centro da esfera. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>radius</entry><entry>
+<para>Raio da esfera.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Exemplo de uso:</para>
+
+<para><link linkend="_class_sculptor">Sculptor</link> v(10, 10, 10);</para>
+
+<para>v.setColor(255, 255, 0, 255); // Define a cor amarela com transparência total</para>
+
+<para>v.putSphere(5, 5, 5, 3); // Ativa uma esfera com centro em (5, 5, 5) e raio 3, atribuindo a ela a cor amarela </para>
+<para>
+Definition at line <link linkend="_sculptor_8cpp_source_1l00182">182</link> of file <link linkend="_sculptor_8cpp_source">sculptor.cpp</link>.</para>
+</section>
+<anchor xml:id="_class_sculptor_1a4bdea3048b419d58e93074060eaa7b52"/><section>
+    <title>putVoxel()</title>
+<indexterm><primary>putVoxel</primary><secondary>Sculptor</secondary></indexterm>
+<indexterm><primary>Sculptor</primary><secondary>putVoxel</secondary></indexterm>
+<para><computeroutput>void Sculptor::putVoxel (int x, int y, int z)</computeroutput></para><para>
+
+<para>Ativa o voxel na posição (x, y, z) e atribui a ele a cor atual. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>x</entry><entry>
+<para>Posição do voxel no eixo X. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y</entry><entry>
+<para>Posição do voxel no eixo Y. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>z</entry><entry>
+<para>Posição do voxel no eixo Z.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Exemplo de uso:</para>
+
+<para><link linkend="_class_sculptor">Sculptor</link> v(10, 10, 10);</para>
+
+<para>v.setColor(255, 0, 0, 255); // Define a cor vermelha com transparência total</para>
+
+<para>v.putVoxel(5, 5, 5); // Ativa o voxel na posição (5, 5, 5) e atribui a ele a cor vermelha </para>
+<para>
+Definition at line <link linkend="_sculptor_8cpp_source_1l00090">90</link> of file <link linkend="_sculptor_8cpp_source">sculptor.cpp</link>.</para>
+</section>
+<anchor xml:id="_class_sculptor_1a5723e671e073ac310b6f385a7fdc9f9f"/><section>
+    <title>setColor()</title>
+<indexterm><primary>setColor</primary><secondary>Sculptor</secondary></indexterm>
+<indexterm><primary>Sculptor</primary><secondary>setColor</secondary></indexterm>
+<para><computeroutput>void Sculptor::setColor (float _r, float _g, float _b, float _a)</computeroutput></para><para>
+
+<para>Define a cor atual utilizada para desenhar. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>_r</entry><entry>
+<para>Componente vermelho da cor (entre 0 e 255). </para>
+</entry>
+                            </row>
+                            <row>
+<entry>_g</entry><entry>
+<para>Componente verde da cor (entre 0 e 255). </para>
+</entry>
+                            </row>
+                            <row>
+<entry>_b</entry><entry>
+<para>Componente azul da cor (entre 0 e 255). </para>
+</entry>
+                            </row>
+                            <row>
+<entry>_a</entry><entry>
+<para>Transparência da cor (entre 0 e 255).</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Exemplo de uso:</para>
+
+<para><link linkend="_class_sculptor">Sculptor</link> v(10, 10, 10);</para>
+
+<para>v.setColor(255, 0, 0, 255); // Define a cor vermelha com transparência total </para>
+<para>
+Definition at line <link linkend="_sculptor_8cpp_source_1l00065">65</link> of file <link linkend="_sculptor_8cpp_source">sculptor.cpp</link>.</para>
+</section>
+<anchor xml:id="_class_sculptor_1a58cb72d22001a5034f15383ca983830c"/><section>
+    <title>writeOFF()</title>
+<indexterm><primary>writeOFF</primary><secondary>Sculptor</secondary></indexterm>
+<indexterm><primary>Sculptor</primary><secondary>writeOFF</secondary></indexterm>
+<para><computeroutput>void Sculptor::writeOFF (const char * filename)</computeroutput></para><para>
+
+<para>Escreve a estrutura do objeto em um arquivo no formato OFF. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>filename</entry><entry>
+<para>Nome do arquivo a ser salvo.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Exemplo de uso:</para>
+
+<para><link linkend="_class_sculptor">Sculptor</link> v(10, 10, 10);</para>
+
+<para>// ... Código para ativar ou desativar voxels ...</para>
+
+<para>v.writeOFF(&quot;sculpture.off&quot;); // Salva a escultura no arquivo sculpture.off </para>
+<para>
+Definition at line <link linkend="_sculptor_8cpp_source_1l00286">286</link> of file <link linkend="_sculptor_8cpp_source">sculptor.cpp</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+sculptor.hsculptor.cpp</section>
+</section>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_voxel_8h_source" xml:lang="en-US">
+<title>voxel.h</title>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_voxel_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#ifndef&#32;VOXEL_H</emphasis>
+<anchor xml:id="_voxel_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#define&#32;VOXEL_H</emphasis>
+<anchor xml:id="_voxel_8h_source_1l00003"/>00003 
+<anchor xml:id="_voxel_8h_source_1l00010"/><link linkend="_struct_voxel">00010</link> <emphasis role="keyword">struct&#32;</emphasis><link linkend="_struct_voxel">Voxel</link>&#32;{
+<anchor xml:id="_voxel_8h_source_1l00011"/><link linkend="_struct_voxel_1a06872ec79b836120b551a848968c0f1b">00011</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_struct_voxel_1a06872ec79b836120b551a848968c0f1b">r</link>;&#32;
+<anchor xml:id="_voxel_8h_source_1l00012"/><link linkend="_struct_voxel_1a27c0da1ed2ff430401d23ff171612a73">00012</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_struct_voxel_1a27c0da1ed2ff430401d23ff171612a73">g</link>;&#32;
+<anchor xml:id="_voxel_8h_source_1l00013"/><link linkend="_struct_voxel_1a5cd8432b1d7d0fd8b79e0fc7d10373a8">00013</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_struct_voxel_1a5cd8432b1d7d0fd8b79e0fc7d10373a8">b</link>;&#32;
+<anchor xml:id="_voxel_8h_source_1l00014"/><link linkend="_struct_voxel_1a3ce2579eb0a9f09a07112ce7498a638e">00014</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_struct_voxel_1a3ce2579eb0a9f09a07112ce7498a638e">a</link>;&#32;
+<anchor xml:id="_voxel_8h_source_1l00015"/><link linkend="_struct_voxel_1a7daa6a3073416618d1365e0fc38f152f">00015</link> &#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_struct_voxel_1a7daa6a3073416618d1365e0fc38f152f">show</link>;&#32;
+<anchor xml:id="_voxel_8h_source_1l00016"/>00016 };
+<anchor xml:id="_voxel_8h_source_1l00017"/>00017 
+<anchor xml:id="_voxel_8h_source_1l00018"/>00018 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;VOXEL_H</emphasis>
+</programlisting></section>
