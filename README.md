@@ -1,8 +1,8 @@
 
 
 # Sculptor3D
-Este é um projeto da faculdade onde o objetivo aprender o uso de classe para escreva um objeto3D.
-No caso criamos uma classe chamada Scuptor. Essa classe representa um escultor 3D e fornece métodos para criar e manipular uma matriz tridimensional de voxels. A classe permite que os usuários executem operações como colocar e remover voxels, criar caixas, esferas e elipsóides, definir cores e transparências e salvar a escultura em um arquivo OFF.
+Este é um projeto da faculdade onde o objetivo é aprender o uso de programação orientada a objetos para escreva um objeto3D.
+No caso, criamos uma classe chamada Sculptor. Essa classe representa um escultor 3D e fornece métodos para criar e manipular uma matriz tridimensional de voxels. A classe permite que os usuários executem operações como colocar e remover voxels, criar caixas, esferas e elipsóides, definir cores e transparências e salvar a escultura em um arquivo OFF.
 
 
 ## Membros da Classe
