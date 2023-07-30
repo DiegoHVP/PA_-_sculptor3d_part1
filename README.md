@@ -63,4 +63,4 @@ Executando este codigo nossa saida será:
 O arquivo OFF gerado pelo programa contém os vértices e as faces dos voxels ativados, bem como as cores definidas para cada voxel. Ele pode ser visualizado em programas gráficos que suportam esse formato como por exemplo o [3DViewer](https://3dviewer.net/)
 
 ## Finalização
-Este projeto e aberto, fique à vontade para fazer suas fazer suas variações e estudos com ele.
+Este projeto e aberto, fique à vontade para fazer suas variações e estudos com ele ;)
